@@ -1,0 +1,107 @@
+.task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        max-width: 769px;
+        margin-inline: auto;
+        width: 100%;
+        padding-top: 1rem;
+        
+        .addTask{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            margin-top: -2.5rem;
+            input{
+                width: 90%;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+                background-color: var(--gray-500);
+                padding:  1rem;
+                color:var(--gray-100)
+                
+            }
+            input::placeholder{
+                color: var(--gray-300)
+            }
+            button{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width:15%;
+                background-color: var(--blue);
+                font-weight: 700;
+                color: var(--gray-100);
+                border: none;
+                border-radius: .5rem;
+                padding: 1.1rem;
+                gap: .5rem;
+                cursor: pointer;
+            }
+        }
+        header{
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 4rem;
+            .ViewTask{
+                display: flex;
+                color: var(--blue);
+                gap: 1rem;
+                align-items: center;
+                
+                span{
+                    background-color: var(--gray-400);
+                    padding: 0.5rem 1rem;
+                    border-radius: 45%;
+                    font-weight: 700;
+                   color: var(--gray-200);
+                }
+            }
+            .doneTask{
+                display: flex;
+                gap: 1rem;
+                color: var(--purple);
+                align-items: center;
+                
+                span{
+                    background-color: var(--gray-400);
+                    padding: 0.5rem 1rem;
+                    border-radius: 45%;
+                    font-weight: 700;
+                   color: var(--gray-200);
+                }
+            }
+        }
+        .nothingList{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .taskItem{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 4rem;
+                
+                span{
+                    color: var(--gray-400)
+                }
+
+                p{
+                    color: var(--gray-300)
+                }
+                
+            }
+        }
+    
+    }
+}
